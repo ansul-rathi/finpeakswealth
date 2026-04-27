@@ -6,11 +6,17 @@ import About from './pages/About'
 import Products from './pages/Products'
 import Distributor from './pages/Distributor'
 import Contact from './pages/Contact'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfUse from './pages/TermsOfUse'
+import Disclaimer from './pages/Disclaimer'
+import GrievancePolicy from './pages/GrievancePolicy'
 import NotFound from './pages/NotFound'
+import ScrollToTop from './components/ScrollToTop'
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-1">
@@ -20,6 +26,10 @@ export default function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/distributor" element={<Distributor />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-use" element={<TermsOfUse />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
+            <Route path="/grievance-policy" element={<GrievancePolicy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

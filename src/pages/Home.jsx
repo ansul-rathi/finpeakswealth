@@ -86,7 +86,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {features.map(({ icon: Icon, title, desc }) => (
               <div key={title} className="bg-white border border-gray-200 rounded-xl p-8 text-center shadow-sm">
-                <div className="w-12 h-12 bg-[#0D1F3C]/8 rounded-full flex items-center justify-center mx-auto mb-5">
+                <div className="w-12 h-12 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-5" style={{background:'rgba(13,31,60,0.08)'}}>
                   <Icon size={22} className="text-[#0D1F3C]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#0D1F3C] mb-3">{title}</h3>
